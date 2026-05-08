@@ -21,3 +21,4 @@ export/
 
 # Editor config
 .editorconfig
+bash.exe.stackdump
