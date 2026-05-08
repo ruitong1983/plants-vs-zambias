@@ -26,7 +26,8 @@
 [ext_resource type="PackedScene" uid="uid://dg12se0tlokh" path="res://Scenes/BucketheadZombie.tscn" id="24_him8o"]
 [ext_resource type="PackedScene" uid="uid://dyoncxauubmib" path="res://Scenes/ConeheadZombie.tscn" id="25_fgk2h"]
 [ext_resource type="PackedScene" uid="uid://dt1uu3t5d1l4k" path="res://Scenes/FlagZombie.tscn" id="26_wn26v"]
-[ext_resource type="Script" uid="uid://bzmcrip7kf8qx" path="res://Scripts/ZombieManager.gd" id="27_zmgr"]
+[ext_resource type="Script" uid="uid://cychk34qkdtja" path="res://Scripts/ZombieManager.gd" id="27_zmgr"]
+[ext_resource type="PackedScene" uid="uid://c177ye0j6g5ga" path="res://Scenes/DuckyZombie.tscn" id="28_im1vy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_48eim"]
 size = Vector2(126.125, 163)
@@ -530,3 +531,5 @@ texture = ExtResource("22_glaac")
 script = ExtResource("27_zmgr")
 zombie_scenes = Array[PackedScene]([ExtResource("3_jn25s"), ExtResource("24_him8o"), ExtResource("25_fgk2h"), ExtResource("26_wn26v")])
 
+[node name="DuckyZombie" parent="." unique_id=939284442 instance=ExtResource("28_im1vy")]
+position = Vector2(1635, 385)
