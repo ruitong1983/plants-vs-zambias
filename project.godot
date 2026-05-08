@@ -10,14 +10,14 @@ config_version=5
 
 [application]
 
-config/name="plantsVSZambias"
-run/main_scene="uid://vueebea1f7rk"
+config/name="plantsVSZombies"
+run/main_scene="uid://dfk3nysbk02hp"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
-MusicManager="*uid://dxopwpblc55yp"
+MusicManager="*res://Scripts/MusicManager.gd"
 
 [display]
 
