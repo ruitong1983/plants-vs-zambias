@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://cra8tgcyjwrt5"]
+
+[ext_resource type="Script" uid="uid://h7oygn7qyxos" path="res://Scripts/PeaShooter.gd" id="1_7484q"]
+[ext_resource type="Texture2D" uid="uid://cuyew74ljqym8" path="res://素材/Images/Plants/Peashooter/Peashooter_1.png" id="1_caema"]
+[ext_resource type="Texture2D" uid="uid://b7x3snox8irn6" path="res://素材/Images/Plants/Peashooter/Peashooter_2.png" id="2_7484q"]
+[ext_resource type="PackedScene" uid="uid://cgh3h28nujt7r" path="res://Scenes/PeaBullet.tscn" id="2_cua0i"]
+[ext_resource type="Texture2D" uid="uid://cl21swr3vpceu" path="res://素材/Images/Plants/Peashooter/Peashooter_3.png" id="3_cua0i"]
+[ext_resource type="Texture2D" uid="uid://ckj420tabtjmx" path="res://素材/Images/Plants/Peashooter/Peashooter_4.png" id="4_emheq"]
+[ext_resource type="Texture2D" uid="uid://cffmb6na08v3w" path="res://素材/Images/Plants/Peashooter/Peashooter_5.png" id="5_bu0nr"]
+[ext_resource type="Texture2D" uid="uid://fslr4ic7gcq6" path="res://素材/Images/Plants/Peashooter/Peashooter_6.png" id="6_r7gel"]
+[ext_resource type="Texture2D" uid="uid://du4jy5bd4bfck" path="res://素材/Images/Plants/Peashooter/Peashooter_7.png" id="7_wkn0m"]
+[ext_resource type="Texture2D" uid="uid://ybd1ti3htnxs" path="res://素材/Images/Plants/Peashooter/Peashooter_8.png" id="8_pdstj"]
+[ext_resource type="Texture2D" uid="uid://dxq16coet7hry" path="res://素材/Images/Plants/Peashooter/Peashooter_9.png" id="9_vvu27"]
+[ext_resource type="Texture2D" uid="uid://dml63sjf76oou" path="res://素材/Images/Plants/Peashooter/Peashooter_10.png" id="10_gqc0c"]
+[ext_resource type="Texture2D" uid="uid://cww1mq1cpiyk6" path="res://素材/Images/Plants/Peashooter/Peashooter_11.png" id="11_lvv0p"]
+[ext_resource type="Texture2D" uid="uid://bhkslkvg6bbuq" path="res://素材/Images/Plants/Peashooter/Peashooter_12.png" id="12_uuv18"]
+[ext_resource type="Texture2D" uid="uid://diq3e3j7mpvvu" path="res://素材/Images/Plants/Peashooter/Peashooter_13.png" id="13_561sg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6qbb5"]
+size = Vector2(59, 71)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0vheq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_caema")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7484q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_cua0i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_emheq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_bu0nr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_r7gel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wkn0m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_pdstj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_vvu27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_gqc0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_lvv0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_uuv18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_561sg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="PeaShooter" type="Area2D" unique_id=569264594 node_paths=PackedStringArray("FiringPos")]
+scale = Vector2(2, 2)
+script = ExtResource("1_7484q")
+NormalPeaScene = ExtResource("2_cua0i")
+FiringPos = NodePath("Marker2D")
+IsPlanted = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=259899250]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_6qbb5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1145922799]
+sprite_frames = SubResource("SpriteFrames_0vheq")
+autoplay = "default"
+frame_progress = 0.90955555
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=684899846]
+position = Vector2(30, -22)

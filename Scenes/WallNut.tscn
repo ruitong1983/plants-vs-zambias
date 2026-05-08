@@ -1,0 +1,206 @@
+[gd_scene format=3 uid="uid://dc1yrdlw6tecq"]
+
+[ext_resource type="Script" uid="uid://cxq2aq0bum5qy" path="res://Scripts/WallNut.gd" id="1_613av"]
+[ext_resource type="Texture2D" uid="uid://c721vmr5ajq30" path="res://素材/Images/Plants/WallNut/Wallnut_cracked1_1.png" id="1_dbq78"]
+[ext_resource type="Texture2D" uid="uid://d4b2nkcna2oyo" path="res://素材/Images/Plants/WallNut/WallNut_1.png" id="1_liogx"]
+[ext_resource type="Texture2D" uid="uid://8m2q64bhat7b" path="res://素材/Images/Plants/WallNut/Wallnut_cracked1_2.png" id="2_613av"]
+[ext_resource type="Texture2D" uid="uid://buiy4btp2rbkp" path="res://素材/Images/Plants/WallNut/WallNut_2.png" id="2_ndyre"]
+[ext_resource type="Texture2D" uid="uid://bi807wfix6ax4" path="res://素材/Images/Plants/WallNut/Wallnut_cracked1_3.png" id="3_78cff"]
+[ext_resource type="Texture2D" uid="uid://bfj3h4yuh1qs4" path="res://素材/Images/Plants/WallNut/WallNut_3.png" id="3_dew8t"]
+[ext_resource type="Texture2D" uid="uid://cae1xqh6foe0p" path="res://素材/Images/Plants/WallNut/Wallnut_cracked1_4.png" id="4_li552"]
+[ext_resource type="Texture2D" uid="uid://2wpa558ppge3" path="res://素材/Images/Plants/WallNut/WallNut_4.png" id="4_xv8dn"]
+[ext_resource type="Texture2D" uid="uid://cwif81i14q1bw" path="res://素材/Images/Plants/WallNut/Wallnut_cracked1_5.png" id="5_aw3yl"]
+[ext_resource type="Texture2D" uid="uid://c3cnxogfvv5nr" path="res://素材/Images/Plants/WallNut/WallNut_5.png" id="5_gq8ci"]
+[ext_resource type="Texture2D" uid="uid://bcfr22wh2oks4" path="res://素材/Images/Plants/WallNut/WallNut_6.png" id="6_hcwe2"]
+[ext_resource type="Texture2D" uid="uid://hso53ihchg2v" path="res://素材/Images/Plants/WallNut/Wallnut_cracked1_6.png" id="6_wqyrv"]
+[ext_resource type="Texture2D" uid="uid://n73hxmvjw612" path="res://素材/Images/Plants/WallNut/Wallnut_cracked1_7.png" id="7_crync"]
+[ext_resource type="Texture2D" uid="uid://dc5evvido23fh" path="res://素材/Images/Plants/WallNut/WallNut_7.png" id="7_uvycu"]
+[ext_resource type="Texture2D" uid="uid://d2a5wr35yc6ik" path="res://素材/Images/Plants/WallNut/WallNut_8.png" id="8_0qc47"]
+[ext_resource type="Texture2D" uid="uid://dd4nwlmh3vafo" path="res://素材/Images/Plants/WallNut/Wallnut_cracked1_8.png" id="8_1pf2m"]
+[ext_resource type="Texture2D" uid="uid://cpk8c8odr212" path="res://素材/Images/Plants/WallNut/Wallnut_cracked1_9.png" id="9_k0whp"]
+[ext_resource type="Texture2D" uid="uid://ex6txgujretw" path="res://素材/Images/Plants/WallNut/WallNut_9.png" id="9_tuehv"]
+[ext_resource type="Texture2D" uid="uid://dis5ynpkrpx1a" path="res://素材/Images/Plants/WallNut/Wallnut_cracked1_10.png" id="10_k4ysb"]
+[ext_resource type="Texture2D" uid="uid://djhf5vlgovani" path="res://素材/Images/Plants/WallNut/WallNut_10.png" id="10_y43ct"]
+[ext_resource type="Texture2D" uid="uid://cicidiay5feo" path="res://素材/Images/Plants/WallNut/WallNut_11.png" id="11_dlbps"]
+[ext_resource type="Texture2D" uid="uid://bflf8kbuyaqw3" path="res://素材/Images/Plants/WallNut/Wallnut_cracked1_11.png" id="11_t2lnl"]
+[ext_resource type="Texture2D" uid="uid://bacdkcml6ojlo" path="res://素材/Images/Plants/WallNut/WallNut_12.png" id="12_1i076"]
+[ext_resource type="Texture2D" uid="uid://dxlne7nc2p5o2" path="res://素材/Images/Plants/WallNut/Wallnut_cracked2_1.png" id="12_t4moq"]
+[ext_resource type="Texture2D" uid="uid://dpy2rgn7yp5j6" path="res://素材/Images/Plants/WallNut/Wallnut_cracked2_2.png" id="13_n465y"]
+[ext_resource type="Texture2D" uid="uid://bumwuu27cbfph" path="res://素材/Images/Plants/WallNut/WallNut_13.png" id="13_y7x16"]
+[ext_resource type="Texture2D" uid="uid://u7jtq1seum1t" path="res://素材/Images/Plants/WallNut/Wallnut_cracked2_3.png" id="14_e7wn5"]
+[ext_resource type="Texture2D" uid="uid://nnk2hj3spj10" path="res://素材/Images/Plants/WallNut/WallNut_14.png" id="14_f6hre"]
+[ext_resource type="Texture2D" uid="uid://djac1scuyb28s" path="res://素材/Images/Plants/WallNut/Wallnut_cracked2_4.png" id="15_kkp3j"]
+[ext_resource type="Texture2D" uid="uid://cucqshrf06kpg" path="res://素材/Images/Plants/WallNut/WallNut_15.png" id="15_xp0s8"]
+[ext_resource type="Texture2D" uid="uid://cjxjc2mx5511q" path="res://素材/Images/Plants/WallNut/Wallnut_cracked2_5.png" id="16_heum1"]
+[ext_resource type="Texture2D" uid="uid://dxlo1fpccb45b" path="res://素材/Images/Plants/WallNut/WallNut_16.png" id="16_sdfij"]
+[ext_resource type="Texture2D" uid="uid://uprov0a506t4" path="res://素材/Images/Plants/WallNut/Wallnut_cracked2_6.png" id="17_etsws"]
+[ext_resource type="Texture2D" uid="uid://di6pbmmxhycl8" path="res://素材/Images/Plants/WallNut/Wallnut_cracked2_7.png" id="18_k2uu2"]
+[ext_resource type="Texture2D" uid="uid://du8bm7sca2kds" path="res://素材/Images/Plants/WallNut/Wallnut_cracked2_8.png" id="19_re8bu"]
+[ext_resource type="Texture2D" uid="uid://dnknryeb2eiga" path="res://素材/Images/Plants/WallNut/Wallnut_cracked2_9.png" id="20_rsurh"]
+[ext_resource type="Texture2D" uid="uid://dyej53n11eeuk" path="res://素材/Images/Plants/WallNut/Wallnut_cracked2_10.png" id="21_00pe1"]
+[ext_resource type="Texture2D" uid="uid://cv6uaduox2n14" path="res://素材/Images/Plants/WallNut/Wallnut_cracked2_11.png" id="22_p8r06"]
+[ext_resource type="Texture2D" uid="uid://b1myfdfjdijo3" path="res://素材/Images/Plants/WallNut/Wallnut_cracked2_12.png" id="23_kl3ad"]
+[ext_resource type="Texture2D" uid="uid://dnxc6i3koo6fi" path="res://素材/Images/Plants/WallNut/Wallnut_cracked2_13.png" id="24_cup3j"]
+[ext_resource type="Texture2D" uid="uid://c4b1nd863arh2" path="res://素材/Images/Plants/WallNut/Wallnut_cracked2_14.png" id="25_i2mv1"]
+[ext_resource type="Texture2D" uid="uid://cce0dy3v4hqp2" path="res://素材/Images/Plants/WallNut/Wallnut_cracked2_15.png" id="26_lgs6e"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_r562h"]
+radius = 30.0
+height = 74.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cw4v3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_dbq78")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_613av")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_78cff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_li552")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_aw3yl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_wqyrv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_crync")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1pf2m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_k0whp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_k4ysb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_t2lnl")
+}],
+"loop": true,
+"name": &"cracked1",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_t4moq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_n465y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_e7wn5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_kkp3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_heum1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_etsws")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_k2uu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_re8bu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_rsurh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_00pe1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_p8r06")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_kl3ad")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_cup3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_i2mv1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_lgs6e")
+}],
+"loop": true,
+"name": &"cracked2",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_liogx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ndyre")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dew8t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xv8dn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gq8ci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hcwe2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_uvycu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_0qc47")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_tuehv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_y43ct")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_dlbps")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_1i076")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_y7x16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_f6hre")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_xp0s8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_sdfij")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="WallNut" type="Area2D" unique_id=1163771079]
+scale = Vector2(2, 2)
+script = ExtResource("1_613av")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1225522675]
+position = Vector2(0, 1)
+shape = SubResource("CapsuleShape2D_r562h")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=554842757]
+sprite_frames = SubResource("SpriteFrames_cw4v3")
+autoplay = "default"
+frame_progress = 0.9062133

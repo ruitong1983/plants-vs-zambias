@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cgh3h28nujt7r"]
+
+[ext_resource type="Texture2D" uid="uid://d22agx4ep50hb" path="res://素材/Images/Effect/PeaBullet.png" id="1_gsi3y"]
+[ext_resource type="Script" uid="uid://p0tbja11iaa7" path="res://Scripts/PeaBullet.gd" id="2_7j1oa"]
+[ext_resource type="PackedScene" uid="uid://2nb6m3yktbos" path="res://Scenes/PeaBulletHitEffect.tscn" id="2_rwyf8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7ja2o"]
+
+[node name="PeaBullet" type="Area2D" unique_id=563440040]
+scale = Vector2(2, 2)
+script = ExtResource("2_7j1oa")
+HitEffectScene = ExtResource("2_rwyf8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=259420471]
+position = Vector2(-12, 0)
+texture = ExtResource("1_gsi3y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=835571757]
+shape = SubResource("RectangleShape2D_7ja2o")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1015138386]

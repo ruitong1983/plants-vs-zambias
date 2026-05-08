@@ -1,0 +1,337 @@
+[gd_scene format=3 uid="uid://dt1uu3t5d1l4k"]
+
+[ext_resource type="Script" uid="uid://n72gdvnsfdi2" path="res://Scripts/FlagZombie.gd" id="1_5nvmn"]
+[ext_resource type="Texture2D" uid="uid://dbasxan2612qn" path="res://素材/Images/Zombies/Zombie/Die/ZombieDie_1.png" id="2_stksp"]
+[ext_resource type="Texture2D" uid="uid://cbfughkkufcqg" path="res://素材/Images/Zombies/Zombie/Die/ZombieDie_2.png" id="3_nn7lb"]
+[ext_resource type="Texture2D" uid="uid://cgj356kynowmb" path="res://素材/Images/Zombies/Zombie/Die/ZombieDie_3.png" id="4_b2ixy"]
+[ext_resource type="Texture2D" uid="uid://dn0rp58y61ys" path="res://素材/Images/Zombies/Zombie/Die/ZombieDie_4.png" id="5_0ng1o"]
+[ext_resource type="Texture2D" uid="uid://df3kyogm03mkq" path="res://素材/Images/Zombies/Zombie/Die/ZombieDie_5.png" id="6_7g8tq"]
+[ext_resource type="Texture2D" uid="uid://3xyqjnyveeo2" path="res://素材/Images/Zombies/Zombie/Die/ZombieDie_6.png" id="7_2aakb"]
+[ext_resource type="Texture2D" uid="uid://btahd6maa2uvj" path="res://素材/Images/Zombies/Zombie/Die/ZombieDie_7.png" id="8_gtkei"]
+[ext_resource type="Texture2D" uid="uid://cd4e1mqnuhvos" path="res://素材/Images/Zombies/Zombie/Die/ZombieDie_8.png" id="9_rsha2"]
+[ext_resource type="Texture2D" uid="uid://phn4l6w3i7vp" path="res://素材/Images/Zombies/Zombie/Die/ZombieDie_9.png" id="10_vlhyh"]
+[ext_resource type="Texture2D" uid="uid://ckw2fw5dggbwc" path="res://素材/Images/Zombies/Zombie/Die/ZombieDie_10.png" id="11_k2tcd"]
+[ext_resource type="Texture2D" uid="uid://b047kbubyra5x" path="res://素材/Images/Zombies/FlagZombie/FlagZombieAttack_1.png" id="12_7iw1v"]
+[ext_resource type="Texture2D" uid="uid://cq10tpi0mh86q" path="res://素材/Images/Zombies/FlagZombie/FlagZombieAttack_2.png" id="13_ffo6t"]
+[ext_resource type="Texture2D" uid="uid://d24u0u1vluotu" path="res://素材/Images/Zombies/FlagZombie/FlagZombieAttack_3.png" id="14_tv7bp"]
+[ext_resource type="Texture2D" uid="uid://22a757avmtmc" path="res://素材/Images/Zombies/FlagZombie/FlagZombieAttack_4.png" id="15_q1jus"]
+[ext_resource type="Texture2D" uid="uid://nx2ha4cnukio" path="res://素材/Images/Zombies/FlagZombie/FlagZombieAttack_5.png" id="16_0obv3"]
+[ext_resource type="Texture2D" uid="uid://dfdutt8a0uxkk" path="res://素材/Images/Zombies/FlagZombie/FlagZombieAttack_6.png" id="17_7tmwb"]
+[ext_resource type="Texture2D" uid="uid://cdjyb8osqrsy8" path="res://素材/Images/Zombies/FlagZombie/FlagZombieAttack_7.png" id="18_c5rvj"]
+[ext_resource type="Texture2D" uid="uid://l1it2h2hnh3c" path="res://素材/Images/Zombies/FlagZombie/FlagZombieAttack_8.png" id="19_nhvnn"]
+[ext_resource type="Texture2D" uid="uid://8o1f3amv8q7d" path="res://素材/Images/Zombies/FlagZombie/FlagZombieAttack_9.png" id="20_vwxyt"]
+[ext_resource type="Texture2D" uid="uid://dmpqrv37jory3" path="res://素材/Images/Zombies/FlagZombie/FlagZombieAttack_10.png" id="21_24qft"]
+[ext_resource type="Texture2D" uid="uid://c5x8cdxsh4hen" path="res://素材/Images/Zombies/FlagZombie/FlagZombieAttack_11.png" id="22_66ma2"]
+[ext_resource type="Texture2D" uid="uid://btpk6d2tn2ros" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHeadAttack_1.png" id="44_66ma2"]
+[ext_resource type="Texture2D" uid="uid://c0xs3wcdhwyv0" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHeadAttack_2.png" id="45_drubp"]
+[ext_resource type="Texture2D" uid="uid://bjotkavkxk0un" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHeadAttack_3.png" id="46_d5rep"]
+[ext_resource type="Texture2D" uid="uid://bmghgfo3qyphi" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHeadAttack_4.png" id="47_vhyv8"]
+[ext_resource type="Texture2D" uid="uid://yeckj3rw34u7" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHeadAttack_5.png" id="48_a20i6"]
+[ext_resource type="Texture2D" uid="uid://dooaksfivogwt" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHeadAttack_6.png" id="49_i4psi"]
+[ext_resource type="Texture2D" uid="uid://rnuie66yln3l" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHeadAttack_7.png" id="50_e2ysk"]
+[ext_resource type="Texture2D" uid="uid://bd22ojgxm8rek" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHeadAttack_8.png" id="51_kl8y1"]
+[ext_resource type="Texture2D" uid="uid://srkj584nl7uv" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHeadAttack_9.png" id="52_oyq7x"]
+[ext_resource type="Texture2D" uid="uid://3uooqvagoauv" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHeadAttack_10.png" id="53_5qimu"]
+[ext_resource type="Texture2D" uid="uid://duw46lac6ipeu" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHeadAttack_11.png" id="54_8m3h5"]
+[ext_resource type="Texture2D" uid="uid://4ftma73d6c7o" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHead_1.png" id="55_66ma2"]
+[ext_resource type="Texture2D" uid="uid://15si5gthij0" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHead_2.png" id="56_drubp"]
+[ext_resource type="Texture2D" uid="uid://bek2wnde6xkr3" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHead_3.png" id="57_d5rep"]
+[ext_resource type="Texture2D" uid="uid://bnwuc6lasdglq" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHead_4.png" id="58_vhyv8"]
+[ext_resource type="Texture2D" uid="uid://b4bxkqy3srhi8" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHead_5.png" id="59_a20i6"]
+[ext_resource type="Texture2D" uid="uid://cqne34dckwudg" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHead_6.png" id="60_i4psi"]
+[ext_resource type="Texture2D" uid="uid://bd4v864kmbidw" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHead_7.png" id="61_e2ysk"]
+[ext_resource type="Texture2D" uid="uid://bongkueti8auo" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHead_8.png" id="62_kl8y1"]
+[ext_resource type="Texture2D" uid="uid://dh7t2pfuf5eu" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHead_9.png" id="63_oyq7x"]
+[ext_resource type="Texture2D" uid="uid://lg0yco8ft347" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHead_10.png" id="64_5qimu"]
+[ext_resource type="Texture2D" uid="uid://y8jfwbmak1ym" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHead_11.png" id="65_8m3h5"]
+[ext_resource type="Texture2D" uid="uid://baxr1f220wccu" path="res://素材/Images/Zombies/FlagZombie/FlagZombieLostHead_12.png" id="66_kw30r"]
+[ext_resource type="Texture2D" uid="uid://d0kqhwm0owh4x" path="res://素材/Images/Zombies/FlagZombie/FlagZombie_1.png" id="73_e2ysk"]
+[ext_resource type="Texture2D" uid="uid://dv7ejf32wa4da" path="res://素材/Images/Zombies/FlagZombie/FlagZombie_2.png" id="74_kl8y1"]
+[ext_resource type="Texture2D" uid="uid://bvy8cj7uhes6y" path="res://素材/Images/Zombies/FlagZombie/FlagZombie_3.png" id="75_oyq7x"]
+[ext_resource type="Texture2D" uid="uid://b7eekahvv021l" path="res://素材/Images/Zombies/FlagZombie/FlagZombie_4.png" id="76_5qimu"]
+[ext_resource type="Texture2D" uid="uid://bab8iji8alb04" path="res://素材/Images/Zombies/FlagZombie/FlagZombie_5.png" id="77_8m3h5"]
+[ext_resource type="Texture2D" uid="uid://ct5w61fbhh70" path="res://素材/Images/Zombies/FlagZombie/FlagZombie_6.png" id="78_kw30r"]
+[ext_resource type="Texture2D" uid="uid://bpue7l18xdnrs" path="res://素材/Images/Zombies/FlagZombie/FlagZombie_7.png" id="79_md21e"]
+[ext_resource type="Texture2D" uid="uid://cjl8a5qnysljm" path="res://素材/Images/Zombies/FlagZombie/FlagZombie_8.png" id="80_1b4ca"]
+[ext_resource type="Texture2D" uid="uid://ctajqxlx5865w" path="res://素材/Images/Zombies/FlagZombie/FlagZombie_9.png" id="81_qsy4b"]
+[ext_resource type="Texture2D" uid="uid://cc28tb0sv5x3x" path="res://素材/Images/Zombies/FlagZombie/FlagZombie_10.png" id="82_xq27y"]
+[ext_resource type="Texture2D" uid="uid://bhg5kevh6oc8" path="res://素材/Images/Zombies/FlagZombie/FlagZombie_11.png" id="83_0fv26"]
+[ext_resource type="Texture2D" uid="uid://cqqc2g0lkuw2r" path="res://素材/Images/Zombies/FlagZombie/FlagZombie_12.png" id="84_ooa7j"]
+[ext_resource type="Texture2D" uid="uid://clxjh5yj5k6b1" path="res://素材/Images/Zombies/Zombie/LostHead/ZombieHead_1.png" id="119_dnihw"]
+[ext_resource type="Texture2D" uid="uid://ptbf5es3kthx" path="res://素材/Images/Zombies/Zombie/LostHead/ZombieHead_2.png" id="120_3kkp5"]
+[ext_resource type="Texture2D" uid="uid://yrh2i2iruwas" path="res://素材/Images/Zombies/Zombie/LostHead/ZombieHead_3.png" id="121_gob0c"]
+[ext_resource type="Texture2D" uid="uid://jc2hcilcfb5n" path="res://素材/Images/Zombies/Zombie/LostHead/ZombieHead_4.png" id="122_7av03"]
+[ext_resource type="Texture2D" uid="uid://rgqmk8qpk2k6" path="res://素材/Images/Zombies/Zombie/LostHead/ZombieHead_5.png" id="123_8y82l"]
+[ext_resource type="Texture2D" uid="uid://buffyqmc0s7jh" path="res://素材/Images/Zombies/Zombie/LostHead/ZombieHead_6.png" id="124_bg856"]
+[ext_resource type="Texture2D" uid="uid://cwivkthetlpwp" path="res://素材/Images/Zombies/Zombie/LostHead/ZombieHead_7.png" id="125_e2d3c"]
+[ext_resource type="Texture2D" uid="uid://dlv7jm8nr5uxn" path="res://素材/Images/Zombies/Zombie/LostHead/ZombieHead_8.png" id="126_f83ne"]
+[ext_resource type="Texture2D" uid="uid://gpifdc85r54" path="res://素材/Images/Zombies/Zombie/LostHead/ZombieHead_9.png" id="127_0bdpm"]
+[ext_resource type="Texture2D" uid="uid://bdpjglimuyk78" path="res://素材/Images/Zombies/Zombie/LostHead/ZombieHead_10.png" id="128_2a8sx"]
+[ext_resource type="Texture2D" uid="uid://cqaywki1n3cde" path="res://素材/Images/Zombies/Zombie/LostHead/ZombieHead_11.png" id="129_thw3v"]
+[ext_resource type="Texture2D" uid="uid://c6wtr6y5gdc14" path="res://素材/Images/Zombies/Zombie/LostHead/ZombieHead_12.png" id="130_hso4m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bt8h3"]
+size = Vector2(55.714333, 110.21434)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4ru28"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_stksp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_nn7lb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_b2ixy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_0ng1o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7g8tq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2aakb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_gtkei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_rsha2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_vlhyh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_k2tcd")
+}],
+"loop": false,
+"name": &"Die",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_7iw1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ffo6t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_tv7bp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_q1jus")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_0obv3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_7tmwb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_c5rvj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_nhvnn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_vwxyt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_24qft")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_66ma2")
+}],
+"loop": true,
+"name": &"Eat",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("44_66ma2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_drubp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_d5rep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_vhyv8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_a20i6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_i4psi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_e2ysk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_kl8y1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_oyq7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_5qimu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_8m3h5")
+}],
+"loop": true,
+"name": &"LostHeadEat",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("55_66ma2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_drubp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_d5rep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_vhyv8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_a20i6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_i4psi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_e2ysk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_kl8y1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_oyq7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_5qimu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_8m3h5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_kw30r")
+}],
+"loop": true,
+"name": &"LostHeadMove",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("73_e2ysk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_kl8y1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_oyq7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_5qimu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_8m3h5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_kw30r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_md21e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_1b4ca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_qsy4b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_xq27y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_0fv26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_ooa7j")
+}],
+"loop": true,
+"name": &"Move",
+"speed": 10.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h15oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("119_dnihw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_3kkp5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_gob0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_7av03")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_8y82l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_bg856")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_e2d3c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_f83ne")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_0bdpm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_2a8sx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_thw3v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_hso4m")
+}],
+"loop": false,
+"name": &"LostHead",
+"speed": 10.0
+}]
+
+[node name="FlagZombie" type="Area2D" unique_id=939284442]
+scale = Vector2(1.4, 1.4)
+script = ExtResource("1_5nvmn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1034223296]
+position = Vector2(42.857132, 15.107117)
+scale = Vector2(0.9999989, 0.9999989)
+shape = SubResource("RectangleShape2D_bt8h3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1465671245]
+position = Vector2(1.4285715, 0)
+sprite_frames = SubResource("SpriteFrames_4ru28")
+animation = &"Move"
+autoplay = "Move"
+
+[node name="LostHeadAnimate" type="AnimatedSprite2D" parent="." unique_id=994543072]
+visible = false
+position = Vector2(54.285706, 26.428587)
+sprite_frames = SubResource("SpriteFrames_h15oy")
+animation = &"LostHead"
+frame = 11
+frame_progress = 1.0

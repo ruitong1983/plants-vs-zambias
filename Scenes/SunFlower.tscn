@@ -1,0 +1,179 @@
+[gd_scene format=3 uid="uid://drc86jx6bnouk"]
+
+[ext_resource type="Texture2D" uid="uid://wjedmir6823v" path="res://素材/Images/Plants/SunFlower/SunFlower_1.png" id="1_euv23"]
+[ext_resource type="Script" uid="uid://bpp8evf04ulw7" path="res://Scripts/SunFlower.gd" id="1_hiwkb"]
+[ext_resource type="PackedScene" uid="uid://6cttnyok1ltp" path="res://Scenes/Sun.tscn" id="2_21oti"]
+[ext_resource type="Texture2D" uid="uid://bmnefqeyqnarj" path="res://素材/Images/Plants/SunFlower/SunFlower_2.png" id="2_hiwkb"]
+[ext_resource type="Texture2D" uid="uid://betc56n6qvm1a" path="res://素材/Images/Plants/SunFlower/SunFlower_3.png" id="3_21oti"]
+[ext_resource type="Texture2D" uid="uid://bd5ed2xpqmsr7" path="res://素材/Images/Plants/SunFlower/SunFlower_4.png" id="4_ffdon"]
+[ext_resource type="Texture2D" uid="uid://byby2rg352ft8" path="res://素材/Images/Plants/SunFlower/SunFlower_5.png" id="5_dbotq"]
+[ext_resource type="Texture2D" uid="uid://7a6e6ykih0c3" path="res://素材/Images/Plants/SunFlower/SunFlower_6.png" id="6_ohdr2"]
+[ext_resource type="Texture2D" uid="uid://bkdue0kmr2ddc" path="res://素材/Images/Plants/SunFlower/SunFlower_7.png" id="7_gqkap"]
+[ext_resource type="Texture2D" uid="uid://boc1g370l37v1" path="res://素材/Images/Plants/SunFlower/SunFlower_8.png" id="8_brnof"]
+[ext_resource type="Texture2D" uid="uid://uk575km1p0ch" path="res://素材/Images/Plants/SunFlower/SunFlower_9.png" id="9_0x2eu"]
+[ext_resource type="Texture2D" uid="uid://grmqawlk8n5c" path="res://素材/Images/Plants/SunFlower/SunFlower_10.png" id="10_re8vq"]
+[ext_resource type="Texture2D" uid="uid://wbxgvb8837vr" path="res://素材/Images/Plants/SunFlower/SunFlower_11.png" id="11_mnnu6"]
+[ext_resource type="Texture2D" uid="uid://c02mulwmxrdb4" path="res://素材/Images/Plants/SunFlower/SunFlower_12.png" id="12_551gi"]
+[ext_resource type="Texture2D" uid="uid://2bgdy4llavpd" path="res://素材/Images/Plants/SunFlower/SunFlower_13.png" id="13_g8rcy"]
+[ext_resource type="Texture2D" uid="uid://xoiltavi67ar" path="res://素材/Images/Plants/SunFlower/SunFlower_14.png" id="14_qebp0"]
+[ext_resource type="Texture2D" uid="uid://sosxqrptvymy" path="res://素材/Images/Plants/SunFlower/SunFlower_15.png" id="15_bq4oo"]
+[ext_resource type="Texture2D" uid="uid://b0jpr323sxtch" path="res://素材/Images/Plants/SunFlower/SunFlower_16.png" id="16_0h821"]
+[ext_resource type="Texture2D" uid="uid://djfjaii5risis" path="res://素材/Images/Plants/SunFlower/SunFlower_17.png" id="17_f61hr"]
+[ext_resource type="Texture2D" uid="uid://bvjpw0oyvttmi" path="res://素材/Images/Plants/SunFlower/SunFlower_18.png" id="18_y3xuh"]
+[ext_resource type="Texture2D" uid="uid://de25gifabppm8" path="res://素材/Images/Plants/SunFlower/sunflower20.png" id="19_uoemj"]
+[ext_resource type="Texture2D" uid="uid://d11awxa35d5nq" path="res://素材/Images/Plants/SunFlower/sunflower21.png" id="20_745vc"]
+[ext_resource type="Texture2D" uid="uid://cc3hqrg0rqy7r" path="res://素材/Images/Plants/SunFlower/sunflower22.png" id="21_evueg"]
+[ext_resource type="Texture2D" uid="uid://c7ke6f87q4jn5" path="res://素材/Images/Plants/SunFlower/sunflower23.png" id="22_ivafm"]
+[ext_resource type="Texture2D" uid="uid://ce322yftkeudj" path="res://素材/Images/Plants/SunFlower/sunflower24.png" id="23_gogis"]
+[ext_resource type="Texture2D" uid="uid://d123ss46q6jr2" path="res://素材/Images/Plants/SunFlower/sunflower25.png" id="24_h55un"]
+[ext_resource type="Texture2D" uid="uid://cxupixmhcjqyl" path="res://素材/Images/Plants/SunFlower/sunflower26.png" id="25_i0xkm"]
+[ext_resource type="Texture2D" uid="uid://du34r2hpkvkkw" path="res://素材/Images/Plants/SunFlower/sunflower27.png" id="26_4uo5f"]
+[ext_resource type="Texture2D" uid="uid://b1tmebbuxd1v2" path="res://素材/Images/Plants/SunFlower/sunflower28.png" id="27_k03ra"]
+[ext_resource type="Texture2D" uid="uid://c36vynaicrhg7" path="res://素材/Images/Plants/SunFlower/sunflower29.png" id="28_hqooo"]
+[ext_resource type="Texture2D" uid="uid://bb205ky58xwcm" path="res://素材/Images/Plants/SunFlower/sunflower210.png" id="29_00mwy"]
+[ext_resource type="Texture2D" uid="uid://l3dvjovbdgo6" path="res://素材/Images/Plants/SunFlower/sunflower211.png" id="30_kqo0e"]
+[ext_resource type="Texture2D" uid="uid://bdd7j5ey2p58n" path="res://素材/Images/Plants/SunFlower/sunflower212.png" id="31_oe6c5"]
+[ext_resource type="Texture2D" uid="uid://e63dhfaqjehc" path="res://素材/Images/Plants/SunFlower/sunflower213.png" id="32_rquir"]
+[ext_resource type="Texture2D" uid="uid://c803mfnbbbr46" path="res://素材/Images/Plants/SunFlower/sunflower214.png" id="33_cw7d5"]
+[ext_resource type="Texture2D" uid="uid://c4khcm0d2744k" path="res://素材/Images/Plants/SunFlower/sunflower215.png" id="34_qf05j"]
+[ext_resource type="Texture2D" uid="uid://b8lawqwkxidn6" path="res://素材/Images/Plants/SunFlower/sunflower216.png" id="35_sxt8f"]
+[ext_resource type="Texture2D" uid="uid://colhlwrr067lf" path="res://素材/Images/Plants/SunFlower/sunflower217.png" id="36_36pqn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4dupr"]
+animations = [{
+"frames": [{
+"duration": 0.5,
+"texture": ExtResource("1_euv23")
+}, {
+"duration": 0.5,
+"texture": ExtResource("2_hiwkb")
+}, {
+"duration": 0.5,
+"texture": ExtResource("3_21oti")
+}, {
+"duration": 0.5,
+"texture": ExtResource("4_ffdon")
+}, {
+"duration": 0.5,
+"texture": ExtResource("5_dbotq")
+}, {
+"duration": 0.5,
+"texture": ExtResource("6_ohdr2")
+}, {
+"duration": 0.5,
+"texture": ExtResource("7_gqkap")
+}, {
+"duration": 0.5,
+"texture": ExtResource("8_brnof")
+}, {
+"duration": 0.5,
+"texture": ExtResource("9_0x2eu")
+}, {
+"duration": 0.5,
+"texture": ExtResource("10_re8vq")
+}, {
+"duration": 0.5,
+"texture": ExtResource("11_mnnu6")
+}, {
+"duration": 0.5,
+"texture": ExtResource("12_551gi")
+}, {
+"duration": 0.5,
+"texture": ExtResource("13_g8rcy")
+}, {
+"duration": 0.5,
+"texture": ExtResource("14_qebp0")
+}, {
+"duration": 0.5,
+"texture": ExtResource("15_bq4oo")
+}, {
+"duration": 0.5,
+"texture": ExtResource("16_0h821")
+}, {
+"duration": 0.5,
+"texture": ExtResource("17_f61hr")
+}, {
+"duration": 0.5,
+"texture": ExtResource("18_y3xuh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 0.5,
+"texture": ExtResource("19_uoemj")
+}, {
+"duration": 0.5,
+"texture": ExtResource("20_745vc")
+}, {
+"duration": 0.5,
+"texture": ExtResource("21_evueg")
+}, {
+"duration": 0.5,
+"texture": ExtResource("22_ivafm")
+}, {
+"duration": 0.5,
+"texture": ExtResource("23_gogis")
+}, {
+"duration": 0.5,
+"texture": ExtResource("24_h55un")
+}, {
+"duration": 0.5,
+"texture": ExtResource("25_i0xkm")
+}, {
+"duration": 0.5,
+"texture": ExtResource("26_4uo5f")
+}, {
+"duration": 0.5,
+"texture": ExtResource("27_k03ra")
+}, {
+"duration": 0.5,
+"texture": ExtResource("28_hqooo")
+}, {
+"duration": 0.5,
+"texture": ExtResource("29_00mwy")
+}, {
+"duration": 0.5,
+"texture": ExtResource("30_kqo0e")
+}, {
+"duration": 0.5,
+"texture": ExtResource("31_oe6c5")
+}, {
+"duration": 0.5,
+"texture": ExtResource("32_rquir")
+}, {
+"duration": 0.5,
+"texture": ExtResource("33_cw7d5")
+}, {
+"duration": 0.5,
+"texture": ExtResource("34_qf05j")
+}, {
+"duration": 0.5,
+"texture": ExtResource("35_sxt8f")
+}, {
+"duration": 0.5,
+"texture": ExtResource("36_36pqn")
+}],
+"loop": false,
+"name": &"flash",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mnxos"]
+size = Vector2(51, 69)
+
+[node name="SunFlower" type="Area2D" unique_id=186995115]
+scale = Vector2(2, 2)
+script = ExtResource("1_hiwkb")
+SunScene = ExtResource("2_21oti")
+IsPlanted = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2050517041]
+sprite_frames = SubResource("SpriteFrames_4dupr")
+animation = &"flash"
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1317096840]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_mnxos")

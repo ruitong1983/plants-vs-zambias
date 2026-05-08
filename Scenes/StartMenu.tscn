@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://dfk3nysbk02hp"]
+
+[ext_resource type="Script" uid="uid://da13c6ddmq050" path="res://Scripts/StartMenu.gd" id="1_dl0pg"]
+[ext_resource type="Texture2D" uid="uid://bywyqw31aigsu" path="res://素材/Images/Background/main_bg.png" id="1_xtte2"]
+[ext_resource type="Texture2D" uid="uid://b5425fbogiys7" path="res://素材/Images/UI/SelectorScreenAdventure_32.png" id="2_dl0pg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h303d"]
+atlas = ExtResource("2_dl0pg")
+region = Rect2(0, 0, 0, 146)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujd4t"]
+atlas = ExtResource("2_dl0pg")
+region = Rect2(0, 0, 0, 146)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ql1sk"]
+atlas = ExtResource("2_dl0pg")
+region = Rect2(0, 146, 0, 146)
+
+[node name="StartMenu" type="Control" unique_id=1273992007]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dl0pg")
+
+[node name="BG" type="TextureRect" parent="." unique_id=1117550525]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_xtte2")
+
+[node name="StartGameButton" type="TextureButton" parent="." unique_id=1769492837]
+texture_filter = 1
+layout_mode = 0
+offset_left = 1028.0
+offset_top = 105.0
+offset_right = 1359.0
+offset_bottom = 251.0
+scale = Vector2(2, 2)
+texture_normal = SubResource("AtlasTexture_h303d")
+texture_pressed = SubResource("AtlasTexture_ujd4t")
+texture_hover = SubResource("AtlasTexture_ql1sk")
+
+[node name="ExitGameButton" type="TextureButton" parent="." unique_id=1495124402]
+layout_mode = 0
+offset_left = 1717.0
+offset_top = 869.0
+offset_right = 1876.0
+offset_bottom = 978.0

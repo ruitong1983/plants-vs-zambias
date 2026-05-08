@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cjormrys6nk0f"]
+
+[ext_resource type="Script" uid="uid://blp72a36oxjut" path="res://Scripts/IcePeaBullet.gd" id="1_e5ivv"]
+[ext_resource type="Texture2D" uid="uid://0lc7mifma35k" path="res://素材/Images/Effect/SnowPeaBullet.png" id="1_xjf3g"]
+[ext_resource type="PackedScene" uid="uid://2nb6m3yktbos" path="res://Scenes/PeaBulletHitEffect.tscn" id="2_4gjw7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e5ivv"]
+size = Vector2(22, 22)
+
+[node name="Area2D" type="Area2D" unique_id=633369231]
+scale = Vector2(2, 2)
+script = ExtResource("1_e5ivv")
+HitEffectScene = ExtResource("2_4gjw7")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=717347879]
+position = Vector2(-12, 0)
+texture = ExtResource("1_xjf3g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=727776575]
+shape = SubResource("RectangleShape2D_e5ivv")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=136175702]

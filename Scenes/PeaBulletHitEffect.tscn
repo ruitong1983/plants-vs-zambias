@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://2nb6m3yktbos"]
+
+[ext_resource type="Texture2D" uid="uid://c5e6olgvlkvo" path="res://素材/Images/Effect/PeaBulletHit.png" id="1_d74w2"]
+[ext_resource type="Script" uid="uid://wnu8j42qtf87" path="res://Scripts/PeaBulletHitEffect.gd" id="2_i7hgl"]
+
+[node name="PeaBulletHitEffect" type="Sprite2D" unique_id=788893230]
+z_index = 10
+texture = ExtResource("1_d74w2")
+script = ExtResource("2_i7hgl")

@@ -1,0 +1,532 @@
+[gd_scene format=3 uid="uid://vueebea1f7rk"]
+
+[ext_resource type="Texture2D" uid="uid://dal8yoeetcaic" path="res://素材/Images/Background/background2.jpg" id="1_48eim"]
+[ext_resource type="Script" uid="uid://cg8xt5o88pjag" path="res://Scripts/Camera2d.gd" id="1_cam2d"]
+[ext_resource type="Script" uid="uid://b2sdlc17j2d1c" path="res://Scripts/GameManager.gd" id="1_yc6xl"]
+[ext_resource type="Texture2D" uid="uid://dtnpgt0hu6470" path="res://素材/Images/UI/ChooserBackground.png" id="2_73a8k"]
+[ext_resource type="PackedScene" uid="uid://6cttnyok1ltp" path="res://Scenes/Sun.tscn" id="2_ev6kq"]
+[ext_resource type="PackedScene" uid="uid://brb46gvmkt8ac" path="res://Scenes/Zombie.tscn" id="3_jn25s"]
+[ext_resource type="Texture2D" uid="uid://bgkssourowgxc" path="res://素材/Images/Card/card_sunflower.png" id="3_q8sds"]
+[ext_resource type="Texture2D" uid="uid://b7ffg7kllgcno" path="res://素材/Images/Card/card_sunflower2.png" id="4_yr2pg"]
+[ext_resource type="Script" uid="uid://cljmhms7gp4o" path="res://Scripts/PlantButton.gd" id="5_r5sjn"]
+[ext_resource type="Texture2D" uid="uid://cc8oiu4il8ect" path="res://素材/Images/Card/card_bk.jpg" id="5_ylpyt"]
+[ext_resource type="Texture2D" uid="uid://brcigyo57gduw" path="res://素材/Images/Card/card_peashooter.png" id="6_wyocf"]
+[ext_resource type="Texture2D" uid="uid://l6d7ife882qu" path="res://素材/Images/Card/card_snowpea2.png" id="7_ktwve"]
+[ext_resource type="Texture2D" uid="uid://c2hci73cted2a" path="res://素材/Images/Card/card_snowpea.png" id="8_r5sjn"]
+[ext_resource type="Texture2D" uid="uid://ci1a613m765qa" path="res://素材/Images/Card/card_wallnut.png" id="9_yc6xl"]
+[ext_resource type="Texture2D" uid="uid://dpp2tx7a62sh1" path="res://素材/Images/Card/card_wallnut2.png" id="10_k6vqf"]
+[ext_resource type="Script" uid="uid://cocfphemfvoct" path="res://Scripts/GridCell.gd" id="11_ktwve"]
+[ext_resource type="PackedScene" uid="uid://drc86jx6bnouk" path="res://Scenes/SunFlower.tscn" id="12_q8sds"]
+[ext_resource type="PackedScene" uid="uid://cwtnnd306qddb" path="res://Scenes/IcePeaShooter.tscn" id="13_ylpyt"]
+[ext_resource type="PackedScene" uid="uid://cra8tgcyjwrt5" path="res://Scenes/PeaShooter.tscn" id="14_wyocf"]
+[ext_resource type="PackedScene" uid="uid://dc1yrdlw6tecq" path="res://Scenes/WallNut.tscn" id="15_wyocf"]
+[ext_resource type="Script" uid="uid://bxgqtgwovhb1u" path="res://Scripts/PlantManager.gd" id="16_plantmgr"]
+[ext_resource type="Script" uid="uid://cuccf1oopinud" path="res://Scripts/Lose.gd" id="22_7p2u3"]
+[ext_resource type="Texture2D" uid="uid://bc0nrwdridom2" path="res://素材/Images/UI/ZombiesWon.png" id="22_glaac"]
+[ext_resource type="PackedScene" uid="uid://dg12se0tlokh" path="res://Scenes/BucketheadZombie.tscn" id="24_him8o"]
+[ext_resource type="PackedScene" uid="uid://dyoncxauubmib" path="res://Scenes/ConeheadZombie.tscn" id="25_fgk2h"]
+[ext_resource type="PackedScene" uid="uid://dt1uu3t5d1l4k" path="res://Scenes/FlagZombie.tscn" id="26_wn26v"]
+[ext_resource type="Script" uid="uid://bzmcrip7kf8qx" path="res://Scripts/ZombieManager.gd" id="27_zmgr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_48eim"]
+size = Vector2(126.125, 163)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7p2u3"]
+size = Vector2(69, 869)
+
+[node name="MainGame" type="Node2D" unique_id=2588089]
+script = ExtResource("1_yc6xl")
+sun_scene = ExtResource("2_ev6kq")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=781696477]
+position = Vector2(960, 540)
+script = ExtResource("1_cam2d")
+
+[node name="BackGround" type="Sprite2D" parent="." unique_id=44283912]
+position = Vector2(1260, 540)
+scale = Vector2(1.8, 1.8)
+texture = ExtResource("1_48eim")
+
+[node name="PlantsUI" type="TextureRect" parent="." unique_id=2070502110]
+offset_left = 384.0
+offset_top = 9.0
+offset_right = 906.0
+offset_bottom = 96.0
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_73a8k")
+script = ExtResource("16_plantmgr")
+
+[node name="SunText" type="Label" parent="PlantsUI" unique_id=696201291]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 12.0
+offset_top = 60.66667
+offset_right = 66.0
+offset_bottom = 83.66667
+text = "100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SunFlower" type="TextureButton" parent="PlantsUI" unique_id=227271685]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 8.0
+offset_right = 130.0
+offset_bottom = 78.0
+texture_normal = ExtResource("3_q8sds")
+texture_disabled = ExtResource("4_yr2pg")
+script = ExtResource("5_r5sjn")
+plant_scene = ExtResource("12_q8sds")
+
+[node name="CooldownBar" type="TextureProgressBar" parent="PlantsUI/SunFlower" unique_id=434551550]
+self_modulate = Color(1, 1, 1, 0.5294118)
+layout_mode = 0
+offset_left = 0.6666565
+offset_right = 50.666656
+offset_bottom = 70.0
+value = 100.0
+fill_mode = 2
+texture_progress = ExtResource("5_ylpyt")
+
+[node name="PenShooter" type="TextureButton" parent="PlantsUI" unique_id=1686814447]
+layout_mode = 0
+offset_left = 134.0
+offset_top = 8.0
+offset_right = 184.0
+offset_bottom = 78.0
+texture_normal = ExtResource("6_wyocf")
+texture_disabled = ExtResource("7_ktwve")
+script = ExtResource("5_r5sjn")
+plant_scene = ExtResource("14_wyocf")
+sun_cost = 100
+
+[node name="CooldownBar" type="TextureProgressBar" parent="PlantsUI/PenShooter" unique_id=1292861888]
+self_modulate = Color(1, 1, 1, 0.5294118)
+layout_mode = 0
+offset_left = 0.6666565
+offset_right = 50.666656
+offset_bottom = 70.0
+value = 100.0
+fill_mode = 2
+texture_progress = ExtResource("5_ylpyt")
+
+[node name="IcePeaShooter" type="TextureButton" parent="PlantsUI" unique_id=505182970]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 240.0
+offset_bottom = 78.0
+texture_normal = ExtResource("8_r5sjn")
+texture_disabled = ExtResource("7_ktwve")
+script = ExtResource("5_r5sjn")
+plant_scene = ExtResource("13_ylpyt")
+sun_cost = 175
+
+[node name="CooldownBar" type="TextureProgressBar" parent="PlantsUI/IcePeaShooter" unique_id=1811784192]
+self_modulate = Color(1, 1, 1, 0.5294118)
+layout_mode = 0
+offset_left = 0.6666565
+offset_right = 50.666656
+offset_bottom = 70.0
+value = 100.0
+fill_mode = 2
+texture_progress = ExtResource("5_ylpyt")
+
+[node name="WallNut" type="TextureButton" parent="PlantsUI" unique_id=2072598182]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 8.0
+offset_right = 292.0
+offset_bottom = 78.0
+texture_normal = ExtResource("9_yc6xl")
+texture_disabled = ExtResource("10_k6vqf")
+script = ExtResource("5_r5sjn")
+plant_scene = ExtResource("15_wyocf")
+
+[node name="CooldownBar" type="TextureProgressBar" parent="PlantsUI/WallNut" unique_id=1993498878]
+self_modulate = Color(1, 1, 1, 0.5294118)
+layout_mode = 0
+offset_left = 0.6666565
+offset_right = 50.666656
+offset_bottom = 70.0
+value = 100.0
+fill_mode = 2
+texture_progress = ExtResource("5_ylpyt")
+
+[node name="DetectionBlock" type="Node2D" parent="." unique_id=1648327109]
+
+[node name="GridCell11" type="Area2D" parent="DetectionBlock" unique_id=636422004]
+position = Vector2(530, 230)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell11" unique_id=363577334]
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell12" type="Area2D" parent="DetectionBlock" unique_id=689213807]
+position = Vector2(670, 230)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell12" unique_id=1510565559]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell13" type="Area2D" parent="DetectionBlock" unique_id=620284960]
+position = Vector2(815, 230)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell13" unique_id=2109953333]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell14" type="Area2D" parent="DetectionBlock" unique_id=2095884048]
+position = Vector2(962, 230)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell14" unique_id=1829001017]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell15" type="Area2D" parent="DetectionBlock" unique_id=1041821228]
+position = Vector2(1105, 230)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell15" unique_id=1956289282]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell16" type="Area2D" parent="DetectionBlock" unique_id=799669175]
+position = Vector2(1249, 230)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell16" unique_id=2130559048]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell17" type="Area2D" parent="DetectionBlock" unique_id=335338544]
+position = Vector2(1392, 230)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell17" unique_id=1103788852]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell18" type="Area2D" parent="DetectionBlock" unique_id=1187838151]
+position = Vector2(1534, 230)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell18" unique_id=1594969279]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell19" type="Area2D" parent="DetectionBlock" unique_id=1119863355]
+position = Vector2(1682, 230)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell19" unique_id=282401113]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell21" type="Area2D" parent="DetectionBlock" unique_id=1397329273]
+position = Vector2(530, 408)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell21" unique_id=328826624]
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell22" type="Area2D" parent="DetectionBlock" unique_id=9460340]
+position = Vector2(670, 408)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell22" unique_id=1683152371]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell23" type="Area2D" parent="DetectionBlock" unique_id=1272544738]
+position = Vector2(815, 408)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell23" unique_id=1642229416]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell24" type="Area2D" parent="DetectionBlock" unique_id=1039193444]
+position = Vector2(962, 408)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell24" unique_id=36598701]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell25" type="Area2D" parent="DetectionBlock" unique_id=1712541636]
+position = Vector2(1105, 408)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell25" unique_id=929466142]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell26" type="Area2D" parent="DetectionBlock" unique_id=1420743322]
+position = Vector2(1249, 408)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell26" unique_id=820415522]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell27" type="Area2D" parent="DetectionBlock" unique_id=1895542388]
+position = Vector2(1392, 408)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell27" unique_id=1502186352]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell28" type="Area2D" parent="DetectionBlock" unique_id=1780069372]
+position = Vector2(1534, 408)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell28" unique_id=1272106476]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell29" type="Area2D" parent="DetectionBlock" unique_id=1762968477]
+position = Vector2(1682, 408)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell29" unique_id=1029183122]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell31" type="Area2D" parent="DetectionBlock" unique_id=1468686737]
+position = Vector2(532, 584)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell31" unique_id=1097500520]
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell32" type="Area2D" parent="DetectionBlock" unique_id=504283226]
+position = Vector2(672, 584)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell32" unique_id=1716839595]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell33" type="Area2D" parent="DetectionBlock" unique_id=9087691]
+position = Vector2(817, 584)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell33" unique_id=79093454]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell34" type="Area2D" parent="DetectionBlock" unique_id=1540045229]
+position = Vector2(964, 584)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell34" unique_id=1974843580]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell35" type="Area2D" parent="DetectionBlock" unique_id=714549294]
+position = Vector2(1107, 584)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell35" unique_id=1781236743]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell36" type="Area2D" parent="DetectionBlock" unique_id=1674046016]
+position = Vector2(1251, 584)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell36" unique_id=1653651716]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell37" type="Area2D" parent="DetectionBlock" unique_id=1481925612]
+position = Vector2(1394, 584)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell37" unique_id=660025698]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell38" type="Area2D" parent="DetectionBlock" unique_id=1974619150]
+position = Vector2(1536, 584)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell38" unique_id=925164418]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell39" type="Area2D" parent="DetectionBlock" unique_id=1310838966]
+position = Vector2(1684, 584)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell39" unique_id=1913480637]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell41" type="Area2D" parent="DetectionBlock" unique_id=207950588]
+position = Vector2(533, 758)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell41" unique_id=1084327329]
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell42" type="Area2D" parent="DetectionBlock" unique_id=1228718417]
+position = Vector2(673, 758)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell42" unique_id=1677179523]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell43" type="Area2D" parent="DetectionBlock" unique_id=314058185]
+position = Vector2(818, 758)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell43" unique_id=519762858]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell44" type="Area2D" parent="DetectionBlock" unique_id=210209890]
+position = Vector2(965, 758)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell44" unique_id=1242077277]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell45" type="Area2D" parent="DetectionBlock" unique_id=1942121993]
+position = Vector2(1108, 758)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell45" unique_id=2031910778]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell46" type="Area2D" parent="DetectionBlock" unique_id=1723145564]
+position = Vector2(1252, 758)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell46" unique_id=1943456022]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell47" type="Area2D" parent="DetectionBlock" unique_id=1171362631]
+position = Vector2(1395, 758)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell47" unique_id=208169501]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell48" type="Area2D" parent="DetectionBlock" unique_id=1924406273]
+position = Vector2(1537, 758)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell48" unique_id=1841770913]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell49" type="Area2D" parent="DetectionBlock" unique_id=1491215111]
+position = Vector2(1685, 758)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell49" unique_id=2009166079]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell51" type="Area2D" parent="DetectionBlock" unique_id=1290106553]
+position = Vector2(534, 936)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell51" unique_id=806592633]
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell52" type="Area2D" parent="DetectionBlock" unique_id=706621632]
+position = Vector2(674, 936)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell52" unique_id=349046187]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell53" type="Area2D" parent="DetectionBlock" unique_id=1135171743]
+position = Vector2(819, 936)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell53" unique_id=1591990225]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell54" type="Area2D" parent="DetectionBlock" unique_id=1976389864]
+position = Vector2(966, 936)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell54" unique_id=1844069150]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell55" type="Area2D" parent="DetectionBlock" unique_id=1170180390]
+position = Vector2(1109, 936)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell55" unique_id=440222050]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell56" type="Area2D" parent="DetectionBlock" unique_id=1422519318]
+position = Vector2(1253, 936)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell56" unique_id=1711081434]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell57" type="Area2D" parent="DetectionBlock" unique_id=1344504290]
+position = Vector2(1396, 936)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell57" unique_id=13305866]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell58" type="Area2D" parent="DetectionBlock" unique_id=2087396819]
+position = Vector2(1538, 936)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell58" unique_id=1799388956]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="GridCell59" type="Area2D" parent="DetectionBlock" unique_id=699192789]
+position = Vector2(1686, 936)
+script = ExtResource("11_ktwve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBlock/GridCell59" unique_id=1594541956]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_48eim")
+
+[node name="DetectLost" type="Area2D" parent="." unique_id=1050075416]
+script = ExtResource("22_7p2u3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectLost" unique_id=82632215]
+position = Vector2(246, 579.5)
+shape = SubResource("RectangleShape2D_7p2u3")
+
+[node name="LoseUI" type="TextureRect" parent="." unique_id=1799449800]
+visible = false
+offset_left = 438.0
+offset_top = 167.0
+offset_right = 1584.0
+offset_bottom = 957.0
+texture = ExtResource("22_glaac")
+
+[node name="ZombieManager" type="Node2D" parent="." unique_id=1325879460]
+script = ExtResource("27_zmgr")
+zombie_scenes = Array[PackedScene]([ExtResource("3_jn25s"), ExtResource("24_him8o"), ExtResource("25_fgk2h"), ExtResource("26_wn26v")])
+

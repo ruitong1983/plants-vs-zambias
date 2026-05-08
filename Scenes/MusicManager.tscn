@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://de7qyn5ygn4uh"]
+
+[ext_resource type="Script" uid="uid://dxopwpblc55yp" path="res://Scripts/MusicManager.gd" id="1_qma2v"]
+[ext_resource type="AudioStream" uid="uid://t1b4iu64edtj" path="res://素材/Audio/Music/StartMenuBGM.mp3" id="2_povxo"]
+[ext_resource type="AudioStream" uid="uid://0weoobhtgox2" path="res://素材/Audio/Music/MainGameBGM.mp3" id="3_kgefd"]
+[ext_resource type="AudioStream" uid="uid://bvp2pse7bijii" path="res://素材/Audio/Sound/awooga.ogg" id="4_kokqj"]
+[ext_resource type="AudioStream" uid="uid://io855b5vgk0f" path="res://素材/Audio/Sound/胜利.ogg" id="5_jollc"]
+[ext_resource type="AudioStream" uid="uid://q7tneronpadb" path="res://素材/Audio/Sound/失败.ogg" id="6_s6noy"]
+[ext_resource type="AudioStream" uid="uid://b2k60gblcfy23" path="res://素材/Audio/Sound/僵尸吃音效.ogg" id="7_a8nsr"]
+
+[node name="MusicManager" type="Node" unique_id=1219476316]
+script = ExtResource("1_qma2v")
+start_menu_bgm = ExtResource("2_povxo")
+main_game_bgm = ExtResource("3_kgefd")
+main_game_start_sfx = ExtResource("4_kokqj")
+game_win_sfx = ExtResource("5_jollc")
+game_lose_sfx = ExtResource("6_s6noy")
+zombie_eat_sfx = ExtResource("7_a8nsr")
+
+[node name="BGM" type="AudioStreamPlayer2D" parent="." unique_id=1279629291]
+
+[node name="SFX" type="AudioStreamPlayer2D" parent="." unique_id=1385989721]
+
+[node name="SFX2" type="AudioStreamPlayer2D" parent="." unique_id=1496244536]

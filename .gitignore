@@ -1,0 +1,23 @@
+# Godot 4+ specific
+.godot/
+*.uid
+
+# Imported files
+*.import
+
+# Temporary files
+*.tmp
+*.tmp.*
+
+# Autoload
+addons/
+
+# Export
+export/
+
+# Claude / AI assistant
+.claude/
+.ziva/
+
+# Editor config
+.editorconfig
