@@ -97,12 +97,12 @@ func start_attack() -> void:
 	MusicManager.ensure_instance()
 	if MusicManager.instance != null:
 		MusicManager.instance.play_zombie_eat_sfx()
-	# 更新动画为攻击动画
-	update_animation()
-	# 启动攻击定时器
-	_attackTimer.start()
-	# 立即造成一次伤害，避免等待间隔
-	_on_attack()
+		# 更新动画为攻击动画
+		update_animation()
+		# 启动攻击定时器
+		_attackTimer.start()
+		# 立即造成一次伤害，避免等待间隔
+		_on_attack()
 
 # ===================== 停止攻击 =====================
 func stop_attack() -> void:
@@ -123,6 +123,10 @@ func _on_attack() -> void:
 	if _targetPlant.has_method("TakeDamage"):
 		# 对植物造成伤害
 		_targetPlant.TakeDamage(AttackDamage)
+		# 播放啃咬音效
+		MusicManager.ensure_instance()
+		if MusicManager.instance != null:
+			MusicManager.instance.play_zombie_eat_sfx()
 
 # ===================== 受到伤害函数（被子弹调用） =====================
 func TakeDamage(damage: int) -> void:
